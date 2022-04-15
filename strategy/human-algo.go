@@ -10,7 +10,7 @@ type Human struct {
 }
 
 //  Initiates a new Human struct
-func NewHuman(name string) *Human {
+func NewHumanAlgo(name string) *Human {
 	return &Human{
 		Name: name,
 	}

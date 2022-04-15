@@ -33,14 +33,14 @@ func RunStrategyClient(strategy, name string) {
 	case "HUMAN":
 		fmt.Printf("STRATEGY TYPE : %s", strategy)
 		fmt.Println()
-		algo := NewHuman(name)
+		algo := NewHumanAlgo(name)
 		exposedStruct := newMainStruct(1, 2, algo)
 		// Calling exposed struct's method, which calls the method of the given struct
 		exposedStruct.CalculateMain()
 	case "COMPUTER":
 		fmt.Printf("STRATEGY TYPE : %s", strategy)
 		fmt.Println()
-		algo := NewComputer(name)
+		algo := NewComputerAlgo(name)
 		exposedStruct := newMainStruct(1, 2, algo)
 		// Calling exposed struct's method, which calls the method of the given struct
 		exposedStruct.CalculateMain()

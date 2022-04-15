@@ -7,7 +7,7 @@ type Computer struct {
 }
 
 // Initiates a new Computer struct
-func NewComputer(name string) *Computer {
+func NewComputerAlgo(name string) *Computer {
 	return &Computer{
 		Name: name,
 	}

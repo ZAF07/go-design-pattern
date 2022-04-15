@@ -13,7 +13,7 @@ func NewComputerAlgo(name string) *Computer {
 	}
 }
 
-// This method takes in as an argument, (the main struct that was exposed to our clients (MainStruct aka Client, and all its properties and methods))
+// This method takes in as an argument, the main struct that is exposed to our clients (MainStruct aka Client, and all its properties and methods)
 func (s *Computer) calc(i *MainStruct) {
 	fmt.Printf("NAME OF STRATEGY STRUCT USED : %s", s.Name)
 	fmt.Println()

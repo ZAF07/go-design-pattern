@@ -12,7 +12,7 @@ func NewWindowsChargerAdapter(i Windows) *WindowsChargerAdapter {
 	}
 }
 
-// This method is where we adapt top the interface
+// This method is where we adapt to the interface
 // We make the struct implement the AppleCharge interface and in the method, we call the windows charge method
 func (cd *WindowsChargerAdapter) InsertMacChargerHead() {
 	fmt.Println("Inserted Mac charger head via adapter")

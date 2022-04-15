@@ -11,5 +11,5 @@ func NewWindowsLaptop() *Windows {
 }
 
 func (w *Windows) InsertWindowsCharger() {
-	fmt.Println("Inserted windows charger head")
+	fmt.Println("Windows charger head inserted")
 }

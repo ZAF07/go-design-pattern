@@ -5,8 +5,7 @@ import (
 	"github.com/ZAF07/go-design-pattern/strategy"
 )
 
-
-func main() {
+func runStrategyClient() {
 	// ONE WAY TO EXECUTE THE STRATEGY
 	
 	// Init the initial algo strategy  
@@ -24,9 +23,9 @@ func main() {
 	// Can execute the logic this way also
 	// strategy.RunStrategyClient("COMPUTER", "AlphaZero")
 	// strategy.RunStrategyClient("HUMAN", "Zaffere")
+}
 
-	// ADAPTER PATTERN
-
+func runAdapterClient() {
 	macbook := adapter.NewMacBook()
 	
 	// Init a new appple charger
@@ -44,4 +43,12 @@ func main() {
 	// Solution here, pass the windows product via an adapter
 	windowsMacAdapter := adapter.NewWindowsChargerAdapter(*acerLaptop)
 	appleCharger.StartCharging(windowsMacAdapter)
+}
+
+func main() {
+	// STRATEGY PATTERN
+	runStrategyClient()
+
+	// ADAPTER PATTERN
+	// runAdapterClient()
 }

@@ -2,6 +2,13 @@ package adapter
 
 import "fmt"
 
-func main() {
-	fmt.Println("adapter")
+type Charger struct {}
+
+func NewCharger() *Charger {
+	return&Charger{}
+}
+
+func (c Charger) StartCharging(i AppleCharge) {
+	fmt.Println("Start Charging")
+	i.InsertMacChargerHead()
 }

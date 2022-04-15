@@ -6,5 +6,5 @@ import (
 
 
 func main() {
-	strategy.Run("COMPUTER", "AlphaZero")
+	strategy.RunStrategyClient("COMPUTER", "AlphaZero")
 }

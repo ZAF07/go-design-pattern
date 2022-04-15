@@ -1,6 +1,6 @@
 package strategy
 
 // Main interface
-type maths interface {
+type Maths interface {
 	calc(word *MainStruct)
 }

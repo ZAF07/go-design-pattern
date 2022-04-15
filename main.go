@@ -6,5 +6,12 @@ import (
 
 
 func main() {
-	strategy.RunStrategyClient("COMPUTER", "AlphaZero")
+	// One way to execute the logic
+	algo := strategy.NewComputerAlgo("Human")
+	logic := strategy.NewMainStruct(2,3,algo)
+	logic.AddToStartValue(3)
+	logic.CalculateMain()
+
+	// Can execute the logic this way also
+	// strategy.RunStrategyClient("COMPUTER", "AlphaZero")
 }

@@ -50,5 +50,5 @@ func main() {
 	runStrategyClient()
 
 	// ADAPTER PATTERN
-	// runAdapterClient()
+	runAdapterClient()
 }
